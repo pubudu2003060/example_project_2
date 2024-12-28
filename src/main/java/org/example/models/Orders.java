@@ -1,10 +1,12 @@
 package org.example.models;
+import org.example.Status;
+
 
 public class Orders {
 
     private int id;
     private int cid;
-    public enum status{pending,completed};
+    private Status.status status;
 
     public int getId() {
         return id;
@@ -20,5 +22,13 @@ public class Orders {
 
     public void setCid(int cid) {
         this.cid = cid;
+    }
+
+    public Status.status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status.status status) {
+        this.status = status;
     }
 }
