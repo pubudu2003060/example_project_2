@@ -5,8 +5,17 @@ public class Customer {
     private int id;
     private String name;
     private String email;
-    private String phone;
+    private String password;
+    private int phone;
     private String address;
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public int getId() {
         return id;
@@ -32,11 +41,11 @@ public class Customer {
         this.email = email;
     }
 
-    public String getPhone() {
+    public int getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhone(int phone) {
         this.phone = phone;
     }
 
